@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fortnite Exchange", "Fortnite Exchange\Fortnite Exchange.csproj", "{0BBFBD67-D3D7-4302-97E4-A18616A72724}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BBFBD67-D3D7-4302-97E4-A18616A72724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BBFBD67-D3D7-4302-97E4-A18616A72724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BBFBD67-D3D7-4302-97E4-A18616A72724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BBFBD67-D3D7-4302-97E4-A18616A72724}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F4EE3A4-3480-4DA1-9C6A-71CA825D4C9A}
+	EndGlobalSection
+EndGlobal
