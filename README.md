@@ -5,7 +5,7 @@ Get exchange token from your epic games account to authenticate within certain s
 
 
 ## Getting started.
-Run the exe file via a run.bat file.
+Run the exe file.
 It will open a screen for logging in to epic games. After doing the login procedure you will get a link look like this.
 
 ```
