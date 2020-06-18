@@ -1,9 +1,9 @@
-C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Debug\Fortnite Exchange.exe.config
-C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Debug\Fortnite Exchange.exe
 C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Debug\Fortnite Exchange.pdb
-C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\obj\Debug\Fortnite Exchange.csprojAssemblyReference.cache
-C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\obj\Debug\Fortnite Exchange.exe
 C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\obj\Debug\Fortnite Exchange.pdb
 C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Debug\Newtonsoft.Json.dll
 C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Debug\Newtonsoft.Json.xml
 C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\obj\Debug\Fortnite Exchange.csproj.CopyComplete
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Debug\Fortnite Exchange.exe.config
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Debug\Fortnite Exchange.exe
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\obj\Debug\Fortnite Exchange.exe
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\obj\Debug\Fortnite Exchange.csprojAssemblyReference.cache

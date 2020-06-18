@@ -8,7 +8,12 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using System.IO;
 using Fortnite_Exchange.Responses;
+using System.Windows.Forms;
 
+/*
+ * THIS CODE IS MADE BY CHINOBMAN. IF YOU CLAIM ANY OF IT GIVE THE CREATOR CREDITS AT LEAST.
+ * https://www.github.com/chinobman
+ */
 namespace Fortnite_Exchange
 {
     class Program
@@ -27,14 +32,23 @@ namespace Fortnite_Exchange
         private ExchangeResponse excRsp;
         private DeviceResponse devRsp;
 
+        [STAThreadAttribute]
         static void Main(string[] args)
         {
+            Console.WriteLine("This program wil replace your current text on your clipboard replace with the exchange code, So please paste your stuff first if it's important");
+            Console.WriteLine("After generation it will minimize the window automatically.");
+            Console.WriteLine("I've been asked if it will send your login details to the owner of this program, Answer is definitly NO!");
+            Console.WriteLine("");
+            Console.WriteLine("My Github: https://github.com/ChinoBman");
+            new Program().excep("");
             new Program().start();
-            Console.ReadLine();
         }
 
         async void start()
         {
+            Console.Title = "Fortnite-Exchange made By ChinoBman";
+
+          
             if (!File.Exists(fileName))
             {
                 System.Diagnostics.Process.Start(authcodeUrl);
@@ -42,7 +56,8 @@ namespace Fortnite_Exchange
                 Console.Write("Authorization Code: ");
                 var input = Console.ReadLine();
                 this.aRsp = await this.GetAuthResponse(input, false);
-            } else
+            }
+            else
             {
                 var file = File.ReadAllText(this.fileName);
                 this.devRsp = JsonConvert.DeserializeObject<DeviceResponse>(file);
@@ -52,14 +67,17 @@ namespace Fortnite_Exchange
             this.excRsp = await this.GetExchangeCode();
             Console.WriteLine($"Account Name: {this.aRsp.displayName}");
             Console.WriteLine($"Exchange Code: {this.excRsp.code}");
-            
-            if(!File.Exists(fileName))
+            Clipboard.SetText(this.excRsp.code);
+
+
+            if (!File.Exists(fileName))
             {
                 var rsp = await CreateDevice(await this.GetAuthResponse(this.excRsp.code, true));
                 var text = JsonConvert.SerializeObject(rsp);
                 File.WriteAllText(this.fileName, text);
-                this.excep("Succesfully written all text to Device.Json\nYou can now generate the exchange token over and over again");
+                Console.WriteLine("Succesfully written all text to Device.Json\nYou can now generate the exchange token over and over again");
             }
+            this.excep("");
         }
 
         /// <summary>
@@ -72,14 +90,14 @@ namespace Fortnite_Exchange
         private async Task<AuthResponse> GetAuthResponse(String code, bool exchange)
         {
             List<KeyValuePair<string, string>> list = new List<KeyValuePair<string, string>>();
-            if(exchange)
+            if (exchange)
             {
                 list.Add(this.createKey("grant_type", "exchange_code"));
                 list.Add(this.createKey("exchange_code", $"{code}"));
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("basic", this.iosClientToken);
-            } 
+            }
             else
-            { 
+            {
                 list.Add(this.createKey("grant_type", "authorization_code"));
                 list.Add(this.createKey("code", $"{code}"));
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("basic", this.header);
@@ -141,10 +159,10 @@ namespace Fortnite_Exchange
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("basic", this.iosClientToken);
             var rsp = client.PostAsync($"{this.serviceUrl}/account/api/oauth/token", content).Result;
 
-            if(rsp.IsSuccessStatusCode)
+            if (rsp.IsSuccessStatusCode)
             {
                 return JsonConvert.DeserializeObject<AuthResponse>(await rsp.Content.ReadAsStringAsync());
-            } 
+            }
             else
             {
                 var e = JsonConvert.DeserializeObject<EpicError>(await rsp.Content.ReadAsStringAsync());
@@ -183,7 +201,7 @@ namespace Fortnite_Exchange
         void excep(string message)
         {
             Console.WriteLine(message);
-            Console.WriteLine("Press any key to restart the program.");
+            Console.WriteLine("Press any key to continue the program.");
             Console.ReadKey();
             Console.Clear();
             new Program().start();
@@ -195,7 +213,7 @@ namespace Fortnite_Exchange
         /// <param name="key">Key in map</param>
         /// <param name="value">Value in map</param>
         /// <returns>KeyValuePair</returns>
-        KeyValuePair<string,string> createKey(string key, string value)
+        KeyValuePair<string, string> createKey(string key, string value)
         {
             return new KeyValuePair<string, string>(key, value);
         }

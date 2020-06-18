@@ -1,0 +1,10 @@
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Release\Fortnite Exchange.exe.config
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Release\Fortnite Exchange.exe
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Release\Fortnite Exchange.pdb
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Release\Newtonsoft.Json.dll
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\bin\Release\Newtonsoft.Json.xml
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\obj\Release\Fortnite_Exchange.FortniteForm.resources
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\obj\Release\Fortnite Exchange.csproj.GenerateResource.cache
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\obj\Release\Fortnite Exchange.csproj.CopyComplete
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\obj\Release\Fortnite Exchange.exe
+C:\Users\chino\source\repos\Fortnite Exchange\Fortnite Exchange\obj\Release\Fortnite Exchange.pdb
