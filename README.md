@@ -5,7 +5,7 @@ Get exchange token from your epic games account to authenticate within certain s
 
 
 ## Getting started.
-Run the jar file via a run.bat file.
+Run the exe file via a run.bat file.
 It will open a screen for logging in to epic games. After doing the login procedure you will get a link look like this.
 
 ```
@@ -21,3 +21,6 @@ Copy the code parameter and paste it into the console. Finally it will give you 
 ## Built with
 
 [Newtonsoft Json](https://www.newtonsoft.com/json) - Converting json to classes.
+
+## Finally
+If you want to contribute or release this version on your own github profile. Give me credits for it. OR just retweet my tweet on github. If i see my project on your github without credits. I will contact github to get it removed.
