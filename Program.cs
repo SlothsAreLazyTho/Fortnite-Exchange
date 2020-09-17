@@ -39,14 +39,14 @@ namespace Fortnite_Exchange
             Console.WriteLine("After generation it will minimize the window automatically.");
             Console.WriteLine("I've been asked if it will send your login details to the owner of this program, Answer is definitly NO!");
             Console.WriteLine("");
-            Console.WriteLine("My Github: https://github.com/ChinoBman");
+            Console.WriteLine("My Github: https://github.com/SrSloth");
             new Program().excep("");
             new Program().start();
         }
 
         async void start()
         {
-            Console.Title = "Fortnite-Exchange made By ChinoBman";
+            Console.Title = "Fortnite-Exchange made By SirSloth";
 
           
             if (!File.Exists(fileName))
